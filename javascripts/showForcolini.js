@@ -1,30 +1,21 @@
 var dom1D, dom2D, plasm;
 
-var view = function(){
+var viewForcolini = function(){
   var p = new Plasm('plasm', 'plasm-inspector');
 fun.PLASM(p);
 NN = REPLICA
 
 
-
-  var message = 'Do you want see the table model?';
-
-  var choice = confirm(message);
-
-  if (choice == true) {
    var plasm = document.getElementById("plasm");
     var plasm = document.createElement("div");
-    //plasm.setAttribute("id","plasm");
-    //var cont = document.getElementById("div plasm");
-    //cont.appendChild(plasm);
-//    init();
+
     var canvas = document.getElementsByTagName('canvas')[0];
     canvas.setAttribute("height","500px");
-    var dom1D = INTERVALS(1)(32);
-    var dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
+    dom1D = INTERVALS(1)(32);
+    dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
     showModel();
    // document.getElementById("showbtn").disabled = true;
-  }
+
 }
 function bezierMappata_1D(controlpoints){
   return BEZIER(S0)(controlpoints)
@@ -319,6 +310,7 @@ var cuscinoBasso = STRUCT([strutturaBassa, p3]);
 
 
 var sedia = STRUCT([strutturaCurva, gambe, basi,cuscinoAlto, cuscinoMedio, cuscinoBasso]);
+sedia = T([0,1,2])([-4,-1.4,-2.3])(sedia);
 
 DRAW(sedia);
 }
