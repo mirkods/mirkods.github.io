@@ -6,7 +6,7 @@ fun.PLASM(p);
 NN = REPLICA
 
 
-   var plasm = document.getElementById("plasm");
+   var plasm = document.getElementById("#separator2 > #plasm");
     var plasm = document.createElement("div");
 
     var canvas = document.getElementsByTagName('canvas')[0];
@@ -14,7 +14,6 @@ NN = REPLICA
     dom1D = INTERVALS(1)(32);
     dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
     showModel();
-   // document.getElementById("showbtn").disabled = true;
 
 }
 function bezierMappata_1D(controlpoints){

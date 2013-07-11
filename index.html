@@ -40,7 +40,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
-<body>
+<body id="body">
 
 	<!-- Primary Page Layout
 	================================================== -->
@@ -149,7 +149,7 @@
 
 
 	<div id="services">
-		<div class="container">
+		<div class="container" id="forcolini" style="overflow: auto;">
 
 			<div class="sixteen columns">
 				<h2 class="white"><span class="lines">SIGNORINA CHAN</span></h2>
@@ -204,7 +204,7 @@ function bezierMap_2D(array){
 					<p class="white">Do you want render the model?</p>
 					<a href="#plasm"><div id="show-forcolini" class="button2">Render</div></a>
 					<div class="clear"></div>
-		          <div id="plasm"></div>
+		          <!-- <div id="plasm"></div> -->
 
 				</div> <!-- end action -->
 			</div> <!-- end sixteen columns -->
@@ -214,8 +214,7 @@ function bezierMap_2D(array){
 
 
 	<div id="separator2">
-		<div class="bg3"></div>
-		<p class="separator">A tremor in the Force. The last time I felt it was in the <br />presence of my old master</p>
+		<div class="bg3" id="plasm" style="display:none;"></div>
 	</div>
 
 
