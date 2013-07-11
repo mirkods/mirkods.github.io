@@ -1,7 +1,7 @@
 $('#show-forcolini').click(function(e){
 	console.log('main.js')
 	viewForcolini();
-	$('#separator2 > #plasm').fadeIn(3100);
+	$('#separator2 > #plasm').fadeIn(3000);
 });
 
 $('#plasm').mouseover(function() {
