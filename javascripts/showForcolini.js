@@ -2,18 +2,14 @@ var dom1D, dom2D, plasm;
 
 var viewForcolini = function(){
   var p = new Plasm('plasm', 'plasm-inspector');
-fun.PLASM(p);
-NN = REPLICA
-
-
-   var plasm = document.getElementById("#separator2 > #plasm");
-    var plasm = document.createElement("div");
+  fun.PLASM(p);
+  NN = REPLICA
 
     var canvas = document.getElementsByTagName('canvas')[0];
     canvas.setAttribute("height","500px");
     dom1D = INTERVALS(1)(32);
     dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
-    showModel();
+    showModelForcolini();
 
 }
 function bezierMappata_1D(controlpoints){
@@ -71,7 +67,7 @@ function base(){
   return COLOR([92/255,92/255,92/255])(STRUCT([base, base2]));
 }
 
-var showModel = function(){
+var showModelForcolini = function(){
 // struttura curva
 var sc1 = [[1.72, 2.72,2.25], [3.27, 1.38,2.25], [5.27, 2.44,2.25], [5.66, 4.43,2.25]]
 var sc1 = BEZIER(S0)(sc1);
