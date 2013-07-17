@@ -1,0 +1,25 @@
+{
+  "name": "plasm-boilerplate",
+  "description": "PLaSM Boilerplate",
+  "version": "0.0.1",
+  "maintainers": [ 
+    {
+      "name": "Enrico Marino",
+      "email": "enrico.marino@email.com"
+    },
+    {
+      "name": "Federico Spini",
+      "email": "federico.spini@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/cvdlab/plasm-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cvdlab/plasm-boilerplate.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
