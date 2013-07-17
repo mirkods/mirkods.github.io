@@ -1,23 +1,30 @@
 $('#show-forcolini').click(function(e){
-	console.log('main-forcolini.js')
-	viewForcolini();
-	$('#separator2 > #plasm').fadeIn(3000);
+	PLASM('plasm1').globalize();
+	$('#plasm1').fadeOut();
+	showModelForcolini();
+	$('#plasm1').fadeIn(3000);
 });
 
 $('#show-rossi').click(function(e){
-	console.log('main-rossi.js')
-	viewRossi();
-	$('#separator3 > #plasm').fadeIn(3000);
+	PLASM('plasm2').globalize();
+	$('#plasm2').fadeOut();
+	showModelRossi();
+	$('#plasm2').fadeIn(3000);
 });
 
-
-$('#plasm').mouseover(function() {
+$('#plasm1').mouseover(function() {
   document.getElementById("body").style.overflow = 'hidden';
 });
 
+$('#plasm2').mouseover(function() {
+  document.getElementById("body").style.overflow = 'hidden';
+});
 
-$('#plasm').mouseout(function() {
+$('#plasm1').mouseout(function() {
   document.getElementById("body").style.overflow = 'auto';
 });
 
+$('#plasm2').mouseout(function() {
+  document.getElementById("body").style.overflow = 'auto';
+});
 

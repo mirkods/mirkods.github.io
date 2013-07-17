@@ -238,10 +238,10 @@ p.separator {
 	width: 100%;
 	height: 500px;
 	position: relative;
-	background: url(../images/bg3.jpg) repeat 0 0 fixed;
 }
 
-#separator2 .bg3 {
+.bg3 {
+	background: url(../images/bg3.jpg) repeat 0 0 fixed;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
@@ -254,11 +254,10 @@ p.separator {
 	width: 100%;
 	height: 500px;
 	position: relative;
-	background: url(../images/bg4.jpg) repeat 0 0 fixed;
-
 }
 
-#separator3 .bg4 {
+.bg4 {
+	background: url(../images/bg4.jpg) repeat 0 0 fixed;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;

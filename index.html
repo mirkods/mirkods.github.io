@@ -201,7 +201,7 @@ function bezierMap_2D(array){
 			<div class="sixteen columns">
 				<div class="action">
 					<p class="white">Do you want render the model?</p>
-					<a href="#separator2"><div id="show-forcolini" class="button2">Render</div></a>
+					<a><div id="show-forcolini" class="button2">Render</div></a>
 					<div class="clear"></div>
 		          <!-- <div id="plasm"></div> -->
 
@@ -212,8 +212,8 @@ function bezierMap_2D(array){
 	</div> <!-- end services -->
 
 
-	<div id="separator2">
-		<div class="bg3" id="plasm" style="display:none;"></div>
+	<div  class="bg3" id="separator2">
+		<div id="plasm1"></div>
 	</div>
 
 
@@ -276,7 +276,7 @@ var structure = SREUCT([halfChair1, halfChair2]);
 			<div class="sixteen columns">
 				<div class="action">
 					<p>Do you want render the model?</p>
-					<a href="#separator3"><div id="show-rossi" class="button1">Render</div></a>
+					<a><div id="show-rossi" class="button1">Render</div></a>
 					<div class="clear"></div>
 		          <!-- <div id="plasm"></div> -->
 
@@ -286,8 +286,8 @@ var structure = SREUCT([halfChair1, halfChair2]);
 		</div> <!-- end container -->
 	</div> <!-- end about -->
 
-	<div id="separator3">
-		<div class="bg4" id="plasm" style="display:none;"></div>
+	<div id="separator3"  class="bg4">
+		<div id="plasm2"></div>
 	</div>
 
 	<div id="contact">
@@ -378,24 +378,19 @@ var structure = SREUCT([halfChair1, halfChair2]);
 	<!-- JS
 	================================================== -->
 	<script src="./javascripts/jquery.min.js"></script>
-	<script src="./javascripts/main.js"></script>
-  <script src="./javascripts/plasm-js/support/jquery.js"></script>
-  <script src="./javascripts/plasm-js/support/mustache.js"></script>
-  <script src="./javascripts/plasm-js/support/numeric.js"></script>
-  <script src="./javascripts/plasm-js/support/director.js"></script>
-  <script src="./javascripts/plasm-js/support/three.js"></script>
-  <script src="./javascripts/plasm-js/support/three-detector.js"></script>
-  <script src="./javascripts/plasm-js/support/three-frame.js"></script>
-  <script src="./javascripts/plasm-js/support/three-stats.js"></script>
-  <script src="./javascripts/plasm-js/support/three-trackball.js"></script>
-  <script src="./javascripts/plasm-js/node_modules/simplexn.js/lib/simplexn.js"></script>
-  <script src="./javascripts/plasm-js/node_modules/f.js/lib/f.js"></script>
-  <script src="./javascripts/plasm-js/lib/plasm.js"></script>
-  <script src="./javascripts/plasm-js/lib/plasm-fun.js"></script>
-  <script src="./javascripts/plasm-js/lib/plasm-env.js"></script>
+
+	<script src="./plasm-boilerplate/build/build.js"></script>
+
 
 	<script src="javascripts/jquery.sticky.js" type="text/javascript"></script>
 	<script src="javascripts/nbw-parallax.js" type="text/javascript"></script>
+
+	<script>
+    var PLASM = require('cvdlab-plasm-fun');
+
+  	</script>
+
+
 	<script src="javascripts/jquery.inview.js" type="text/javascript"></script>
 	<script src="javascripts/showForcolini.js" type="text/javascript"></script>
 	<script src="javascripts/showRossi.js" type="text/javascript"></script>
@@ -403,6 +398,7 @@ var structure = SREUCT([halfChair1, halfChair2]);
 	<script src="javascripts/jquery.flexslider.js" type="text/javascript"></script>
 	<script src="javascripts/jquery.prettyPhoto.js" type="text/javascript"></script>
 	<script src="contact-form.js"></script>
+	<script src="./javascripts/main.js"></script>
 
 	<!-- Sticky nav -->
 	<script>
