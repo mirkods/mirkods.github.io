@@ -1,24 +1,14 @@
-var dom1D, dom2D, plasm;
+var dom1D, dom2D;
 
-var viewForcolini = function(){
-  var p = new Plasm('plasm', 'plasm-inspector');
-  fun.PLASM(p);
-  NN = REPLICA
-
-    var canvas = document.getElementsByTagName('canvas')[0];
-    canvas.setAttribute("height","500px");
-    dom1D = INTERVALS(1)(32);
-    dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
-    showModelForcolini();
-
-}
 function bezierMappata_1D(controlpoints){
   return BEZIER(S0)(controlpoints)
 }
+
 function bezierMappata_2D(functions){
   var x = BEZIER(S1)(functions)
   return MAP(x)(dom2D)
 }
+
 function base(){
 
   var b1 = [[5.66, 4.44,0], [6.69, 3.64,0], [6.69, 2.08,0], [5.59, 1.45,0]];
@@ -68,6 +58,9 @@ function base(){
 }
 
 var showModelForcolini = function(){
+dom1D = INTERVALS(1)(32);
+dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
+
 // struttura curva
 var sc1 = [[1.72, 2.72,2.25], [3.27, 1.38,2.25], [5.27, 2.44,2.25], [5.66, 4.43,2.25]]
 var sc1 = BEZIER(S0)(sc1);

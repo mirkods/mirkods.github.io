@@ -1,24 +1,5 @@
-var dom1D, dom2D, plasm;
+var dom1D, dom2D;
 
-var viewRossi = function(){
-  var p = new Plasm('plasm', 'plasm-inspector');
-fun.PLASM(p);
-NN = REPLICA
-
-
-   // var plasm = document.getElementById("plasm");
-   // console.log(plasm);
-   var plasm2 = $('#separator3 #plasm');
-   console.log(plasm2)
-    var plasm = document.createElement("div");
-
-    var canvas = document.getElementsByTagName('canvas')[0];
-    canvas.setAttribute("height","500px");
-    dom1D = INTERVALS(1)(32);
-    dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
-    showModelRossi();
-
-}
 function bezierMappata_1D(controlpoints){
   return BEZIER(S0)(controlpoints)
 }
@@ -142,6 +123,10 @@ function halfStructure(z){
 }
 
 var showModelRossi = function(){
+
+  dom1D = INTERVALS(1)(32);
+  dom2D = DOMAIN([[0,1],[0,1]])([30,30]);
+
   var z_init = 0;
   var z_end = 4.5;
 
