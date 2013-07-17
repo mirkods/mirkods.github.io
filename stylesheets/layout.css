@@ -851,3 +851,13 @@ p.t-type {
 	    font-weight: normal;
 	    font-style: normal; }
 */
+
+.social{
+	vertical-align: center;
+	color: #FFFFFF;
+	margin-top: -7px;
+}
+
+.social a{
+	color: #FFFFFF;
+}
